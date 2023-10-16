@@ -36,7 +36,7 @@ def handle_client(client_socket):
 
 def main():
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server.bind(('127.0.0.1', 8888))
+    server.bind(('0.0.0.0', 8080))
     server.listen(5)
 
     print("SOCKS5 прокси-сервер слушает на порту 8888...")
